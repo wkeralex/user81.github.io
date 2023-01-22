@@ -1,0 +1,49 @@
+.cv-page {
+  position: relative;
+
+  clear: both;
+
+  width: 100%;
+  margin: 0px auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .cv-page {
+    width: 1210px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .cv-page {
+    width: 100%;
+  }
+}
+
+.cv-page__navigation {
+  position: fixed;
+
+  display: inline-block;
+  overflow: auto;
+
+  height: 100vh;
+
+  -webkit-animation: moveFromLeft var(--cv-animation-delay) cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -moz-animation: moveFromLeft var(--cv-animation-delay) cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -ms-animation: moveFromLeft var(--cv-animation-delay) cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -o-animation: moveFromLeft var(--cv-animation-delay) cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  animation: moveFromLeft var(--cv-animation-delay) cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+  background: var(--cv_color_white);
+}
+
+.cv-page__entry {
+  float: right;
+
+  width: var(--cv-page__entry_width_pc);
+}
+
+@media only screen and (max-width: 800px) {
+  .cv-page__entry {
+    width: var(--cv-page__entry_width_mobile);
+  }
+}

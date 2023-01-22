@@ -1,0 +1,24 @@
+.cv-button {
+  text-decoration: none;
+  letter-spacing: 3px;
+
+  color: var(--cv_color_white);
+  background: var(--cv_color_light-green);
+  box-shadow: var(--cv_shadow_small-light-green-green);
+
+  font-size: var(--cv_text_font-size);
+  font-weight: var(--cv-content-heading_font-weight);
+}
+
+.cv-button:hover {
+  box-shadow: var(--cv_shadow_small-light-green-green-pressed);
+}
+
+.cv-button-link {
+  text-decoration: none;
+
+  color: var(--cv_color_white);
+
+  font-size: var(--cv_text_font-size);
+  font-weight: var(--cv-content-heading_font-weight);
+}

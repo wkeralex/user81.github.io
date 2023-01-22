@@ -1,0 +1,41 @@
+.cv-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cv-skills-list__column {
+  width: 300px;
+}
+
+.cv-skills-list__description {
+  display: inline-block;
+
+  width: 300px;
+  height: 40px;
+}
+
+.cv-skills-list__description-name {
+  float: left;
+}
+
+.cv-skills-list__description-percent {
+  float: right;
+}
+
+.cv-progress {
+  height: 14px;
+
+  border: 1px solid var(--cv_color_light-green);
+  background: var(--cv_color_white);
+}
+
+.cv-progress__bar {
+  width: 150px;
+  height: 15px;
+
+  transition: 1s;
+
+  background: var(--cv_color_light-green);
+  box-shadow: var(--cv_shadow_small-light-green-green);
+}

@@ -1,0 +1,122 @@
+
+.cv-timeline {
+  position: relative;
+
+  padding: 0;
+
+  list-style: none;
+}
+.cv-timeline:before {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  width: 3px;
+  height: calc(100% - 221px);
+
+  content: "";
+
+  background: var(--cv_color_light-green);
+  box-shadow: var(--cv_shadow_small-light-green-green);
+}
+
+.cv-timeline__entry {
+  position: relative;
+
+  margin-bottom: 30px;
+
+  color: var(--cv_color_dark-grey);
+}
+.cv-timeline__entry:after {
+  display: table;
+  clear: both;
+
+  content: "";
+}
+
+.cv-timeline_date {
+  position: absolute;
+  left: 20px;
+
+  padding: 16px 5px;
+
+  transform: translateX(-50%);
+
+  border: solid var(--cv_color_light-green);
+  background: var(--cv_color_white);
+  box-shadow: var(--cv_shadow_small-light-green-green);
+}
+
+.cv-timeline__content {
+  position: relative;
+
+  display: block;
+
+  margin-left: 60px;
+  padding: 10px;
+
+  border: solid 5px var(--cv_color_light-green);
+  box-shadow: var(--cv_shadow_small-light-green-green);
+}
+
+.cv-timeline__content:before {
+  position: absolute;
+  top: 15px;
+  left: -10px;
+
+  display: block;
+
+  content: "";
+
+  border-top: 10px solid transparent;
+  border-right: 10px solid var(--cv_color_light-green);
+  border-bottom: 10px solid transparent;
+}
+
+@media screen and (min-width: 750px) {
+  .cv-timeline:before {
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+  .cv-timeline_date {
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+  .cv-timeline__content {
+    width: calc(50% - 85px);
+    margin-left: 0;
+  }
+  .cv-timeline__content:before {
+    right: -10px;
+    left: auto;
+
+    border-right: none;
+    border-left: 10px solid var(--cv_color_light-green);
+  }
+
+  .cv-timeline__content--flipped {
+    float: right;
+  }
+  .cv-timeline__content--flipped:before {
+    right: auto;
+    left: -10px;
+
+    border-right: 10px solid var(--cv_color_light-green);
+    border-left: none;
+  }
+}
+
+.cv-timeline__heading {
+  margin-bottom: 3px;
+
+  font-size: 25px;
+}
+
+.cv-timeline__text {
+  color: var(--cv_color_dark-grey);
+}
+.cv-timeline__text:last-child {
+  margin-bottom: 0;
+}

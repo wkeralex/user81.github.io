@@ -1,0 +1,11 @@
+.cv-contact-info {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.cv-contact-info__entry {
+  margin: 10px;
+  padding: 10px;
+}

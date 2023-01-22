@@ -1,0 +1,17 @@
+.hide-block{
+  display: none;
+
+  transition-duration: 1s, 1s;
+}
+
+.full-size{
+  width: 100%;
+
+  transition-duration: 1s, 1s;
+}
+
+.cv-light-page{
+  color: var(--cv_color_dark-grey);
+  background: var(--cv_color_white);
+  box-shadow: var(--cv_shadow_small-green-white);
+}

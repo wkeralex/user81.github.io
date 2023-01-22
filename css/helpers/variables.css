@@ -1,0 +1,28 @@
+:root{
+  --cv-animation-delay: 600ms;
+  --cv-menu_size_pc: 250px;
+  --cv-menu_size_mobile: 50px;
+  --cv-page__entry_size_pc: calc(var(--cv-menu_size_pc) + 20px);
+  --cv-page__entry_size_mobile: calc(var(--cv-menu_size_mobile) + 20px);
+  --cv-page__entry_width_pc: calc(100% - var(--cv-page__entry_size_pc));
+  --cv-page__entry_width_mobile: calc(100% - var(--cv-page__entry_size_mobile));
+  --cv_color_white: #f1f1f1;
+  --cv_color_dark-white: #88a095;
+  --cv_color_dark-grey: #444444;
+  --cv_color_light-grey: #777;
+  --cv_color_dark-green: #1e3b34;
+  --cv_color_green: #2e5249;
+  --cv_color_light-green: #428574;
+  --cv_color_very-light-green: #88b2a7;
+  --cv_shadow_small-green-white: 1px 1px 2px var(--cv_color_dark-green), -1px -1px 2px var(--cv_color_white);
+  --cv_shadow_large-green-white: 1px 4px 5px var(--cv_color_dark-green), -4px -4px 4px var(--cv_color_white);
+  --cv_shadow_small-light-green-green:-1px -1px 0px var(--cv_color_light-green), 1px 3px 1px var(--cv_color_dark-green);
+  --cv_shadow_small-light-green-green-pressed: inset 0px -1px 0px var(--cv_color_very-light-green), inset 3px 4px 3px var(--cv_color_dark-green);
+  --cv_text_font-size: 20px;
+  --cv_text_font-size_small: 10px;
+  --cv-content-heading_font-size: 35px;
+  --cv-content-heading_font-weight: 700;
+  --cv-heading-text_font-size: 30px;
+  --cv-heading-title_font-size: 55px;
+}
+

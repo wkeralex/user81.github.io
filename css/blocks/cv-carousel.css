@@ -1,0 +1,118 @@
+/* ---- */
+.cv-carousel {
+  position: relative;
+
+  margin-top: 26px;
+
+  box-shadow: var(--cv_shadow_small-green-white);
+}
+
+.cv-carousel__entry {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+}
+
+.cv-carousel__open:checked + .cv-carousel__item {
+  position: static;
+
+  opacity: 100;
+}
+
+.cv-carousel__item {
+  position: absolute;
+
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+
+  opacity: 0;
+}
+
+.cv-carousel__item-img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.cv-carousel__control {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+
+  display: none;
+
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+  cursor: pointer;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+
+  color: var(--cv_color_white);
+  background: rgba(0, 0, 0, 0.28);
+
+  font-size: 40px;
+  line-height: 35px;
+}
+
+.cv-carousel__prev {
+  left: 2%;
+}
+
+.cv-carousel__next {
+  right: 2%;
+}
+
+.cv-carousel__control:hover {
+  color: var(--cv_color_light-grey);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#cv-carousel-1:checked ~ .control-1,
+#cv-carousel-2:checked ~ .control-2,
+#cv-carousel-3:checked ~ .control-3,
+#cv-carousel-4:checked ~ .control-4 {
+  display: block;
+}
+
+.cv-carousel__indicators {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: 2%;
+  left: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+
+.cv-carousel__indicator {
+  display: inline-block;
+
+  margin: 0 5px;
+}
+
+.cv-carousel__bullet {
+  cursor: pointer;
+}
+
+#cv-carousel-1:checked ~ .control-1 ~ .cv-carousel__indicators .cv-carousel__indicator:nth-child(1) .cv-carousel__bullet .cv-menu__icon,
+#cv-carousel-2:checked ~ .control-2 ~ .cv-carousel__indicators .cv-carousel__indicator:nth-child(2) .cv-carousel__bullet .cv-menu__icon,
+#cv-carousel-3:checked ~ .control-3 ~ .cv-carousel__indicators .cv-carousel__indicator:nth-child(3) .cv-carousel__bullet .cv-menu__icon,
+#cv-carousel-4:checked ~ .control-4 ~ .cv-carousel__indicators .cv-carousel__indicator:nth-child(4) .cv-carousel__bullet .cv-menu__icon {
+  background: url('./../../img/icons/rhombus-filled.svg');
+}

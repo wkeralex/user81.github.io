@@ -1,0 +1,20 @@
+.body-l {
+  background: var(--cv_color_dark-white);
+  overflow-x: hidden;
+  margin: 0px 4px;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}

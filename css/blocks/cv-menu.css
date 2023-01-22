@@ -1,0 +1,305 @@
+.cv-menu {
+  z-index: 2;
+
+  width: var(--cv-menu_size_pc);
+  margin: 0 5px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.cv-menu___item {
+  position: relative;
+}
+
+.cv-menu__link {
+  position: relative;
+
+  display: block;
+
+  height: 36px;
+  padding: 12px 20px;
+
+  text-align: left;
+  text-decoration: none;
+
+  color: var(--cv_color_light-grey);
+  border-bottom: 1px solid var(--cv_color_dark-white);
+}
+
+.cv-menu__icon {
+  float: left;
+
+  margin: 0 10px 0 0;
+}
+
+.cv-menu__strong {
+  display: block;
+
+  text-transform: uppercase;
+}
+
+.cv-menu__small {
+  display: block;
+
+  font-size: var(--cv_text_font-size_small);
+}
+
+.cv-menu__icon,
+.cv-menu__strong,
+.cv-menu__small {
+  position: relative;
+
+  -webkit-transition: all var(--cv-animation-delay) linear;
+  -moz-transition: all var(--cv-animation-delay) linear;
+  -ms-transition: all var(--cv-animation-delay) linear;
+  -o-transition: all var(--cv-animation-delay) linear;
+  transition: all var(--cv-animation-delay) linear;
+}
+
+.cv-menu__item:hover .cv-menu__icon {
+  -webkit-animation: moveFromTop var(--cv-animation-delay) ease-in-out;
+  -moz-animation: moveFromTop var(--cv-animation-delay) ease-in-out;
+  -ms-animation: moveFromTop var(--cv-animation-delay) ease-in-out;
+  -o-animation: moveFromTop var(--cv-animation-delay) ease-in-out;
+  animation: moveFromTop var(--cv-animation-delay) ease-in-out;
+
+  opacity: 1;
+}
+
+.cv-menu__item:hover .cv-menu__strong {
+  -webkit-animation: moveFromLeft var(--cv-animation-delay) ease-in-out;
+  -moz-animation: moveFromLeft var(--cv-animation-delay) ease-in-out;
+  -ms-animation: moveFromLeft var(--cv-animation-delay) ease-in-out;
+  -o-animation: moveFromLeft var(--cv-animation-delay) ease-in-out;
+  animation: moveFromLeft var(--cv-animation-delay) ease-in-out;
+
+  opacity: 1;
+}
+
+.cv-menu__item:hover .cv-menu__small {
+  -webkit-animation: moveFromRight var(--cv-animation-delay) ease-in-out;
+  -moz-animation: moveFromRight var(--cv-animation-delay) ease-in-out;
+  -ms-animation: moveFromRight var(--cv-animation-delay) ease-in-out;
+  -o-animation: moveFromRight var(--cv-animation-delay) ease-in-out;
+  animation: moveFromRight var(--cv-animation-delay) ease-in-out;
+
+  opacity: 1;
+}
+
+.cv-menu__item:hover .cv-menu__link {
+  color: #2e5249;
+}
+
+.cv-menu__item:hover .cv-menu__icon {
+  filter: invert(27%) sepia(6%) saturate(2814%) hue-rotate(114deg) brightness(93%) contrast(86%);
+}
+
+.cv-menu__link_state_active {
+  position: relative;
+
+  margin: 0 -4px;
+
+  color: #2e5249;
+  border: 0;
+  border-right: 4px solid #2e5249;
+  border-left: 4px solid #2e5249;
+  -webkit-box-shadow: 0 0 5px #ddd;
+  -moz-box-shadow: 0 0 5px #ddd;
+  box-shadow: 0 0 5px #ddd;
+}
+
+.cv-menu__link_state_active:before {
+  position: absolute;
+  top: 42%;
+  left: 0;
+
+  content: "";
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #2e5249;
+}
+
+.cv-menu__link_state_active:after {
+  position: absolute;
+  top: 42%;
+  right: 0;
+
+  content: "";
+
+  border-top: 5px solid transparent;
+  border-right: 5px solid #2e5249;
+  border-bottom: 5px solid transparent;
+}
+
+.cv-menu__link_state_active .cv-menu__icon {
+  filter: invert(27%) sepia(6%) saturate(2814%) hue-rotate(114deg) brightness(93%) contrast(86%);
+}
+
+@keyframes moveFromTop {
+  from {
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -o-transform: translateY(10%);
+    transform: translateY(10%);
+
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromLeft {
+  from {
+    -webkit-transform: translateX(10%);
+    -moz-transform: translateX(10%);
+    -ms-transform: translateX(10%);
+    -o-transform: translateX(10%);
+    transform: translateX(10%);
+
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromRight {
+  from {
+    -webkit-transform: translateX(-10%);
+    -moz-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+    -o-transform: translateX(-10%);
+    transform: translateX(-10%);
+
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .cv-menu {
+    width: 200px;
+  }
+
+  .cv-menu__link {
+    height: 30px;
+  }
+
+  .cv-menu__icon {
+    font-size: 22px;
+  }
+
+  .cv-menu__strong {
+    font-size: 12px;
+  }
+
+  .cv-menu__small {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cv-menu {
+    width: var(--cv-menu_size_mobile);
+  }
+
+  .cv-menu__link {
+    position: relative;
+
+    height: 20px;
+    padding: 12px 16px;
+  }
+
+  .cv-menu__small {
+    display: none;
+  }
+
+  .cv-menu__strong {
+    display: none;
+  }
+
+  .cv-menu__link:hover .cv-menu__strong,
+  .cv-menu__link_state_active .cv-menu__strong {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+
+    display: block;
+
+    min-width: 100%;
+    padding: 3px 0;
+
+    text-align: center;
+    text-transform: lowercase;
+
+    color: var(--cv_color_green);
+
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  .cv-menu__link:hover .icon,
+  .cv-menu__link_state_active .icon {
+    top: -10px;
+  }
+}
+
+/* кнопка*/
+.cv-menu__hide {
+  position: absolute;
+
+  display: inline-block;
+
+  margin: 10px 20px;
+
+  cursor: pointer;
+}
+
+.cv-menu__hide__bar {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+
+  transition: 0.4s;
+
+  background-color: var(--cv_color_dark-grey);
+}
+
+.cv-menu__button_change .cv-menu__hide__bar:nth-child(1) {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.cv-menu__button_change .cv-menu__hide__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.cv-menu__button_change .cv-menu__hide__bar:nth-child(3) {
+  transform: translate(0, -11px) rotate(45deg);
+}

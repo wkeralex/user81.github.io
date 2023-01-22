@@ -1,0 +1,14 @@
+@import "./helpers/variables.css";
+@import "./blocks/body.css";
+@import "./blocks/cv-page.css";
+@import"./blocks/cv-home.css";
+@import"./blocks/cv-content-page.css";
+@import"./blocks/cv-skills-list.css";
+@import "./blocks/icons.css";
+@import "./blocks/cv-menu.css";
+@import "./blocks/cv-timeline.css";
+@import "./blocks/cv-portfolio.css";
+@import "./blocks/cv-carousel.css";
+@import "./blocks/cv-button.css";
+@import "./blocks/cv-contact-info.css";
+@import"./helpers/mixins.css";
